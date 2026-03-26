@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Mundial SENA | Donde el talento compite a nivel mundial{% endblock %}
+
+{% block content %}
+<!-- ========== HERO ========== -->
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <h1>Bienvenido al Mundial SENA</h1>
+    <p>Donde el talento compite a nivel mundial</p>
+    <button id="btnVerEquipos" class="btn-primary">Ver equipos</button>
+  </div>
+</section>
+
+<!-- ========== EQUIPOS ========== -->
+<section id="equipos" class="reveal">
+  <div class="container">
+    <h2 class="section-title"><span>Equipos participantes</span></h2>
+    <div class="equipos-grid" id="equiposGrid"></div>
+  </div>
+</section>
+
+<!-- ========== CALENDARIO ========== -->
+<section id="calendario" class="reveal" style="background: var(--gray-bg);">
+  <div class="container">
+    <h2 class="section-title"><span>Próximos partidos</span></h2>
+    <div class="calendario-grid" id="calendarioGrid"></div>
+  </div>
+</section>
+
+<!-- ========== RESULTADOS ========== -->
+<section id="resultados" class="reveal">
+  <div class="container">
+    <h2 class="section-title"><span>Resultados destacados</span></h2>
+    <div class="resultados-list" id="resultadosList"></div>
+  </div>
+</section>
+
+<!-- ========== GALERÍA ========== -->
+<section id="galeria" class="reveal" style="background: var(--gray-bg);">
+  <div class="container">
+    <h2 class="section-title"><span>Galería del evento</span></h2>
+    <div class="galeria-grid" id="galeriaGrid"></div>
+  </div>
+</section>
+{% endblock %}
